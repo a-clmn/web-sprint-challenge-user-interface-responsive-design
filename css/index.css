@@ -227,21 +227,69 @@ a {
 footer {
     width: 100%;
     height: 15vh;
-    padding-top: 2.5vh;
     font-size: 3rem;
-    /*my additions*/
-    
-
 }
+
+   /*my additions*/
+
+   .footer-container {
+    background-color: rgb(0, 4, 17);
+   }
+
+   
+   .join-text, .links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   }
+
+   .join-text {
+    padding: 0%;
+}   
+
+
+   footer a {
+    padding: 0%;
+   }
+
+   .join-text, .footer-input {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+   }
+
+   .footer-input, .footer-button {
+    display: inline;
+   }
+
 
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
     
+    .links {
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+    }
+
+    a {
+        padding: 0%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
 
     /* gallery section */
     .gallery {
         height: auto;
+    }
+
+    .photo {
+        padding-bottom: 5%;
     }
     
     /* about us section */
@@ -285,7 +333,14 @@ footer {
     /* footer section */
     footer {
         height: auto;
-        padding-top: 2.5vh;
         font-size: 2rem;
     }
+
+   .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   } 
+
 }
